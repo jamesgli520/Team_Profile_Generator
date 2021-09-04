@@ -36,7 +36,7 @@ const generateTeam = (team) => {
                 <li><a href='mailto:${intern.getEmail()}'>Email: ${intern.getEmail()}<a></li>
                 <li>School: ${intern.getSchoolName()}</li>
                 <li>Role: ${intern.getRole()}</li>
-            </ul>3
+            </ul>
         </div>
         `;
     };

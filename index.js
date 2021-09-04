@@ -117,7 +117,7 @@ function init(){
                 },
                 {
                     type: 'input',
-                    name: 'enginneerId',
+                    name: 'engineerId',
                     message: 'What is the Id of engineer:',
                     validate: (answer) => {
                         const pass = answer.match(/^[1-9]\d*$/);
