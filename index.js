@@ -65,7 +65,7 @@ function init(){
         ]
     ).then(
         answers => {     
-            const theManager = new Manager(answers.managerName, answers.managerId,answers.managerEmail,answers.managerOfficeNumber);
+            const theManager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
             team.push(theManager);
             id.push(answers.managerId);
             createTeam();
@@ -125,6 +125,16 @@ function init(){
                             return true;
                         }
                         return 'A positive number greater than zero: ';
+                        
+                    },
+                    validate: (answer) => {
+                        for(var i = 0; i< id.length; i++){
+                            if(id[i] != answer){
+                                return true;
+                            }
+                            return 'Id already existed!';
+                        }
+                        
                     },
                 },
                 {
@@ -147,7 +157,7 @@ function init(){
                         if (answer !== '') {
                         return true;
                         }
-                        return 'Can not be empty and should be valid github link https://github.com/githubUserName: ';
+                        return 'Can not be empty and should be valid github link https://github.com/GitHubUserName: ';
                     },
                 },
             ]
@@ -218,16 +228,6 @@ function init(){
             }
         )
     }
-
-    // function buildTeam(){
-    //     if(!fs.existsSync(OUTPUT_DIR)){
-    //         fs.mkdirSync(OUTPUT_DIR);
-    //     }
-    //     fs.writeFileSync(outputpath, render(team), 'utf-8');
-    // }
-
-    
-        
 }
 
 init();

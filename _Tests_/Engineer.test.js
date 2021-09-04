@@ -7,17 +7,17 @@ describe('Engineer', () => {
         expect(typeof e).toBe('object');
     });
     
-    test('can set office number at constructor arugment', () => {
-        const testValue = 1;
+    test('can set github at constructor arugment', () => {
+        const testValue = 'https://github.com/GitHubUserName';
         const e = new Engineer('name', 1, 'email@email.com', testValue);
-        expect(e.officeNumber).toBe(testValue)
+        expect(e.GitHub).toBe(testValue)
     });
 
-    //test getOfficeNumber() method
+    //test getGitHub() method
     test('Can get office number by using getOfficeNumber()', () => {
-        const testValue = 1;
+        const testValue = 'https://github.com/GitHubUserName';
         const e = new Engineer('name', 1, 'email@email.com', testValue);
-        expect(e.getOfficeNumber()).toBe(testValue);
+        expect(e.getGitHub()).toBe(testValue);
     });
 
      //test getRole method
