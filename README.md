@@ -26,7 +26,7 @@
     node index.js 
   ```  
   ## Walk Through Video
-  <a href='https://drive.google.com/file/d/1sWb2aceMTU1JYHKqqTUlLHW7KuJF6v_W/view'>Walk Through Video </a>
+  <a href='https://drive.google.com/file/d/13_gVqhrLHE8PpSv0QonrEDDBNJ1TRxHd/view'>Walk Through Video </a>
 
   ## Usage
   on terminal run 
